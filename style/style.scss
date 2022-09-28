@@ -1,1 +1,42 @@
 // Write your styles
+
+* {
+  font-family: "Roboto";
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+aside {
+  order: -1;
+  background-color: #1992d4;
+  color: #fff;
+  height: 100vh;
+}
+
+ul {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.header {
+  flex-grow: 1;
+}
+
+.header__main {
+  &--left {
+    input {
+      width: 500px;
+    }
+  }
+
+  &--right {
+    width: 20%;
+  }
+}

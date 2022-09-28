@@ -5,25 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-
     <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header></header>
-    <aside>
-      <div class="nav__title">Dashboard</div>
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+    <main class="d-flex">
+      <div class="header">
+        <div class="header__main d-flex justify-content-between">
+          <div class="header__main--left d-flex align-items-center gap-10">
+            <img src="img/icons/magnify.png" />
+            <input type="text" name="search" />
+          </div>
+          <div class="header__main--right d-flex align-items-center gap-10">
+            <img src="img/icons/bell-ring.png" />
+            <div><b>Morgan Oakley</b></div>
+          </div>
+        </div>
+        <div class="header__submain">
+          <div class="header__submain--title">title</div>
+          <div class="header__submain--buttons">buttons</div>
+        </div>
       </div>
-    </aside>
-    <main></main>
+      <aside class="d-flex w-25 flex-column fs-5">
+        <div class="nav__title mx-2 my-4">
+          <img class="img-fluid mx-2" src="img/logo.png" />Dashboard
+        </div>
+        <div class="nav__links mb-5">
+          <ul class="d-flex flex-column gap-10">
+            <li><img src="img/icons/home.png" />Home</li>
+            <li><img src="img/icons/account.png" />Profile</li>
+            <li><img src="img/icons/message.png" />Messages</li>
+            <li><img src="img/icons/history.png" />History</li>
+            <li><img src="img/icons/file.png" />Tasks</li>
+            <li><img src="img/icons/account-group.png" />Communities</li>
+          </ul>
+        </div>
+        <div class="nav__sublinks">
+          <ul class="d-flex flex-column gap-10">
+            <li><img src="img/icons/cog.png" />Settings</li>
+            <li><img src="img/icons/help-box.png" />Support</li>
+            <li><img src="img/icons/shield-check.png" />Privacy</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
   </body>
   <script defer src="./script.js"></script>
 </html>
